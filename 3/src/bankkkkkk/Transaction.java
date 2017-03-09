@@ -9,7 +9,7 @@ public class Transaction {
 	private boolean isCheck;
 	private boolean isOverdraft=false;
 	private double beforeBalance;
-	private double afterBalance=0;
+	private double afterBalance;
 	
 	public double getAmount() {
 		return amount;

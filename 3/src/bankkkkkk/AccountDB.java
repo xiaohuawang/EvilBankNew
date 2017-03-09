@@ -16,6 +16,7 @@ public class AccountDB {
 			+ File.separatorChar + "src" + File.separatorChar + "account.txt");
 	private static final String delimiter = ",";
 
+
 	public HashMap<String, Account> getAllAccounts() throws IOException {
 
 		// String: acct number
@@ -69,8 +70,8 @@ public class AccountDB {
 				// System.out.println("account name= "+currAcc.getName());
 				writer.println(currAcc.getAcctNumber() + delimiter
 						+ currAcc.getName() + delimiter + currAcc.getBalance()
-						+ delimiter);
-				// +currAcc.isClosed()
+						+ delimiter+currAcc.isClosed());
+				 
 			}
 			writer.close();
 		} catch (FileNotFoundException e) 
